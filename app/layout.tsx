@@ -35,8 +35,8 @@ export default function RootLayout({
   const demos = db.demo.findMany();
   return (
     <html lang="en" className="[color-scheme:dark]">
-      <script defer src="https://fvufkgimumwxjyvcvlla.supabase.co/storage/v1/object/public/script/rum.min.js?token=c0b56e61aa3aa1bef33906ad3880010b98c9c37c160dea58bfd88ecfadc954df&reactScan=true"></script>
-      <body
+    <script defer src="https://fvufkgimumwxjyvcvlla.supabase.co/storage/v1/object/public/script/rum.min.js?token=d632a38d6d3703578d6f530f6d5fd8f2ac07599e458fe61930121f02d89d3483&reactScan=true"></script> 
+    <body
         className={`overflow-y-scroll bg-gray-950 font-sans ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="fixed top-0 z-10 flex w-full flex-col border-b border-gray-800 bg-black lg:bottom-0 lg:z-auto lg:w-72 lg:border-r lg:border-b-0 lg:border-gray-800">
