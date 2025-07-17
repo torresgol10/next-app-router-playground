@@ -35,6 +35,7 @@ export default function RootLayout({
   const demos = db.demo.findMany();
   return (
     <html lang="en" className="[color-scheme:dark]">
+      <script defer src="https://fvufkgimumwxjyvcvlla.supabase.co/storage/v1/object/public/script/rum.min.js?token=c0b56e61aa3aa1bef33906ad3880010b98c9c37c160dea58bfd88ecfadc954df&reactScan=true"></script>
       <body
         className={`overflow-y-scroll bg-gray-950 font-sans ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
