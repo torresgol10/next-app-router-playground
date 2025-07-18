@@ -37,6 +37,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="[color-scheme:dark]">
     <Script
+      src="https://unpkg.com/react-scan/dist/auto.global.js"
+      strategy="beforeInteractive"
+    />
+
+    <Script
       src="https://fvufkgimumwxjyvcvlla.supabase.co/storage/v1/object/public/script/rum.min.js?token=d632a38d6d3703578d6f530f6d5fd8f2ac07599e458fe61930121f02d89d3483&reactScan=true"
       strategy="beforeInteractive"
     />
