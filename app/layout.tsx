@@ -5,6 +5,7 @@ import Byline from '#/ui/byline';
 import { GlobalNav } from '#/ui/global-nav';
 import { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import Script from 'next/script'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
 
@@ -35,7 +36,10 @@ export default function RootLayout({
   const demos = db.demo.findMany();
   return (
     <html lang="en" className="[color-scheme:dark]">
-    <script src="https://fvufkgimumwxjyvcvlla.supabase.co/storage/v1/object/public/script/rum.min.js?token=d632a38d6d3703578d6f530f6d5fd8f2ac07599e458fe61930121f02d89d3483&reactScan=true"></script> 
+    <Script
+      src="https://fvufkgimumwxjyvcvlla.supabase.co/storage/v1/object/public/script/rum.min.js?token=d632a38d6d3703578d6f530f6d5fd8f2ac07599e458fe61930121f02d89d3483&reactScan=true"
+      strategy="beforeInteractive"
+    />
     <body
         className={`overflow-y-scroll bg-gray-950 font-sans ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
